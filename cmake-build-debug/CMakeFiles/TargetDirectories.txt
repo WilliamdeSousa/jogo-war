@@ -1,0 +1,3 @@
+/home/william/Projects/CLion/jogo-war/cmake-build-debug/CMakeFiles/jogo_war.dir
+/home/william/Projects/CLion/jogo-war/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/william/Projects/CLion/jogo-war/cmake-build-debug/CMakeFiles/rebuild_cache.dir
