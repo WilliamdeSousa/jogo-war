@@ -29,4 +29,5 @@ add_executable(jogo_war src/main.cpp
         src/Tile.h
         src/City.h
         src/Road.h
+        src/Menu.h
 )
