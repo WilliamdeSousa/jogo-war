@@ -115,6 +115,18 @@ build CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o: CXX_COMPILER__jogo_war_unsca
   OBJECT_DIR = CMakeFiles/jogo_war.dir
   OBJECT_FILE_DIR = CMakeFiles/jogo_war.dir/src
 
+build CMakeFiles/jogo_war.dir/src/Cursor.cpp.o: CXX_COMPILER__jogo_war_unscanned_Debug /home/william/Projects/CLion/jogo-war/src/Cursor.cpp || cmake_object_order_depends_target_jogo_war
+  DEP_FILE = CMakeFiles/jogo_war.dir/src/Cursor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/jogo_war.dir
+  OBJECT_FILE_DIR = CMakeFiles/jogo_war.dir/src
+
+build CMakeFiles/jogo_war.dir/src/Menu.cpp.o: CXX_COMPILER__jogo_war_unscanned_Debug /home/william/Projects/CLion/jogo-war/src/Menu.cpp || cmake_object_order_depends_target_jogo_war
+  DEP_FILE = CMakeFiles/jogo_war.dir/src/Menu.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/jogo_war.dir
+  OBJECT_FILE_DIR = CMakeFiles/jogo_war.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target jogo_war
@@ -123,7 +135,7 @@ build CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o: CXX_COMPILER__jogo_war_unsca
 #############################################
 # Link the executable jogo_war
 
-build jogo_war: CXX_EXECUTABLE_LINKER__jogo_war_Debug CMakeFiles/jogo_war.dir/src/main.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/SpriteBuffer.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Fase.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/ObjetoDeJogo.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Sound.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Sprite.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/SpriteAnimado.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/TextSprite.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Core/ColorHandler.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Core/Cores_base.cpp.o CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o
+build jogo_war: CXX_EXECUTABLE_LINKER__jogo_war_Debug CMakeFiles/jogo_war.dir/src/main.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/SpriteBuffer.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Fase.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/ObjetoDeJogo.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Sound.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Sprite.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/SpriteAnimado.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/TextSprite.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Core/ColorHandler.cpp.o CMakeFiles/jogo_war.dir/src/ASCII_Engine/Core/Cores_base.cpp.o CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o CMakeFiles/jogo_war.dir/src/Cursor.cpp.o CMakeFiles/jogo_war.dir/src/Menu.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/jogo_war.dir
   POST_BUILD = :

@@ -15,6 +15,8 @@ public:
 
         battleFase.init();
         battleFase.run(screen);
+
+        std::cout << "FIM" << std::endl;
     }
 };
 

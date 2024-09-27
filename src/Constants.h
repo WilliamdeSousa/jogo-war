@@ -18,8 +18,10 @@ namespace RESOURCE {
     const std::string WATER = RESOURCE_DIR + "water.img";
     const std::string GRASS = RESOURCE_DIR + "grass.img";
     const std::string ROAD = RESOURCE_DIR + "road/";
-    const std::string MONTAIN = RESOURCE_DIR + "montain.img";
+    const std::string MOUNTAIN = RESOURCE_DIR + "mountain.img";
     const std::string CURSOR = RESOURCE_DIR + "cursor.img";
+    const std::string MENU = RESOURCE_DIR + "menu.img";
+    const std::string SELECTION = RESOURCE_DIR + "selection.img";
 }
 
 const std::string LEVELS_DIR = "../levels/";

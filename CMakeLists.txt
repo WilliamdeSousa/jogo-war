@@ -30,4 +30,7 @@ add_executable(jogo_war src/main.cpp
         src/City.h
         src/Road.h
         src/Menu.h
+        src/Cursor.cpp
+        src/Menu.cpp
+        src/Selection.h
 )

@@ -6,7 +6,7 @@
 
 class Tank : public Unit {
 public:
-    Tank(int x, int y, COR::Cor cor = COR::AZUL, Tile *tile = nullptr) : Unit("Tank", RESOURCE::TANK, x, y, cor, tile) {}
+    Tank(int x, int y, COR::Cor cor = COR::AZUL, Tile *tile = nullptr, int team = 1) : Unit("Tank", RESOURCE::TANK, x, y, cor, tile, team, unitAttributes[2]) {}
 };
 
 

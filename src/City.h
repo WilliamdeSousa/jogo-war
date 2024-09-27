@@ -3,9 +3,11 @@
 
 #include "Tile.h"
 
+const COR::Cor cityColors[] = {COR::CINZA, COR::AZUL, COR::VERMELHA};
+
 class City : public Tile {
 public:
-    City(int x, int y, COR::Cor cor) : Tile("City", x, y, cor, RESOURCE::CITY){}
+    City(int x, int y, int team) : Tile("City", x, y, cityColors[team], RESOURCE::CITY, nullptr, team){}
 };
 
 

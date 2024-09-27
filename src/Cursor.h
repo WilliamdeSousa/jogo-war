@@ -5,43 +5,67 @@
 #include "ASCII_Engine/ObjetoDeJogo.hpp"
 #include "Constants.h"
 #include "Tile.h"
+#include "Menu.h"
 
 class Cursor : public ObjetoDeJogo {
 public:
-    Cursor(Tile *(map[TILES_VERTICALLY][TILES_HORIZONTALLY])) : ObjetoDeJogo("cursor", Sprite(RESOURCE::CURSOR, COR::BRANCA, true), 0, 0), x(0), y(0) {
+    Cursor(Tile *(map[TILES_VERTICALLY][TILES_HORIZONTALLY]), Menu *menu, int x = 0, int y = 0) : ObjetoDeJogo("cursor", Sprite(RESOURCE::CURSOR, COR::BRANCA, true), y * TILE_HEIGHT, x * TILE_WIDTH), x(x), y(y), menu(menu) {
         for (int i = 0; i < TILES_VERTICALLY; i++)
             for (int j = 0; j < TILES_HORIZONTALLY; j++) {
                 this->map[i][j] = map[i][j];
             }
     }
 
-    void moveToRight() { if (x < TILES_HORIZONTALLY - 1) { moveRight(TILE_WIDTH); x++; } };
-    void moveToLeft() { if (x > 0) { moveLeft(TILE_WIDTH); x--; } };
-    void moveToDown() { if (y < TILES_VERTICALLY - 1) { moveDown(TILE_HEIGHT); y++; } };
-    void moveToUp() { if (y > 0) { moveUp(TILE_HEIGHT); y--; } };
+    void moveToRight();
+    void moveToLeft();
+    void moveToDown();
+    void moveToUp();
 
-    void select() {
-        if (DEBUG_MODE) {
-            Tile *tileSelected = getSelected();
-            bool hasUnit = tileSelected->hasUnit();
-            Unit *unitSelected = tileSelected->getUnit();
+    Tile *getSelected() { return map[y][x]; }
+    int getX() const { return x; }
+    int getY() const { return y; }
 
-            std::cout << "Select (x=" << x << ", y=" << y << "): " << tileSelected->getName() << (hasUnit ? " -> " + unitSelected->getName() : "") << std::endl;
+    Menu *getMenu() { return menu; }
+
+    void update() override {
+        ObjetoDeJogo::update();
+        std::string tile = getSelected()->getName();
+
+        COR::Cor tileColor = COR::BRANCA;
+        if (tile == "City") {
+            tileColor = COR::CINZA;
+            if (getSelected()->getTeam() == 1) {
+                tileColor = COR::AZUL;
+            }
+            else if (getSelected()->getTeam() == 2) {
+                tileColor = COR::VERMELHA;
+            }
         }
-    }
-    void unselect() {
-        if (DEBUG_MODE) {
-            Tile *selected = getSelected();
-            std::cout << "Unselect (x=" << x << ", y=" << y << "): " << selected->getName() << std::endl;
-        }
+
+        int n = (TILE_WIDTH - tile.length() + 1) / 2 - 1;
+
+        TextSprite line = TextSprite(std::string(TILE_WIDTH - 1, '-'), COR::BRANCA);
+        TextSprite(tile, tileColor).draw(line, 0, n);
+        line.draw(*pSprite, 0, 1);
+//
+//        line = TextSprite(std::string(TILE_WIDTH - 1, '-'), COR::BRANCA);
+//
+//        if (getSelected()->hasUnit() && getSelected()->getUnit()->isActive()) {
+//            std::string unit = getSelected()->getUnit()->getName();
+//            COR::Cor unitColor = (getSelected()->getUnit()->getTeam() == 1 ? COR::AZUL : COR::VERMELHA);
+//
+//            n = (TILE_WIDTH - unit.length() + 1) / 2 - 1;
+//
+//            TextSprite(unit, unitColor).draw(line, 0, n);
+//        }
+
+//        line.draw(*pSprite, TILE_HEIGHT, 1);
     }
 
-    Tile *getSelected() {
-        return map[y][x];
-    }
 private:
     int x, y;
     Tile *(map[TILES_VERTICALLY][TILES_HORIZONTALLY]);
+    Menu *menu;
 };
 
 
