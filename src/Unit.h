@@ -18,7 +18,7 @@ const UnitAttributes unitAttributes[] = {
         {20, 1, 4, 3, true, false},
         {25, 1, 3, 2, true, false},
         {35, 5, 4, 2, false, false},
-        {300, 1, 6, 4, true, true}
+        {30, 1, 6, 4, true, true}
 };
 
 class Unit : public ObjetoDeJogo {

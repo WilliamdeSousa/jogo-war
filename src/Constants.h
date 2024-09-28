@@ -5,7 +5,7 @@ const int TILE_WIDTH = 12, TILE_HEIGHT = 7;
 const int TILES_HORIZONTALLY = 19, TILES_VERTICALLY = 7;
 const int WIDTH = TILES_HORIZONTALLY * TILE_WIDTH + 1, HEIGHT = TILES_VERTICALLY * TILE_HEIGHT + 1;
 
-const bool DEBUG_MODE = true;
+const bool DEBUG_MODE = false;
 
 namespace RESOURCE {
     const std::string RESOURCE_DIR = "../rsc/";

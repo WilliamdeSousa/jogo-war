@@ -40,3 +40,12 @@
 1	632	1727413796391689217	CMakeFiles/jogo_war.dir/src/main.cpp.o	58641a2b3c22e2b9
 2	820	1727413796392689231	CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o	ad514269bdbd7a21
 820	896	1727413797210700712	jogo_war	18c96333f5ff12b
+7	1071	1727517755705035807	CMakeFiles/jogo_war.dir/src/Cursor.cpp.o	38b2a6febb194b02
+6	1141	1727517755704035798	CMakeFiles/jogo_war.dir/src/main.cpp.o	58641a2b3c22e2b9
+6	1338	1727517755704035798	CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o	ad514269bdbd7a21
+1338	1449	1727517757036047506	jogo_war	18c96333f5ff12b
+1	803	1727517786183286915	CMakeFiles/jogo_war.dir/src/Cursor.cpp.o	38b2a6febb194b02
+1	888	1727517786183286915	CMakeFiles/jogo_war.dir/src/Menu.cpp.o	5304f4a6eda8642
+1	1007	1727517786183286915	CMakeFiles/jogo_war.dir/src/main.cpp.o	58641a2b3c22e2b9
+1	1167	1727517786183286915	CMakeFiles/jogo_war.dir/src/BattleFase.cpp.o	ad514269bdbd7a21
+1167	1275	1727517787349293056	jogo_war	18c96333f5ff12b
